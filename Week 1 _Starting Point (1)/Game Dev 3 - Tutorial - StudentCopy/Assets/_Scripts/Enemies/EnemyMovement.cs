@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
-{    
+{
     //Default move value
+    public EnemyData enemyData;
     private float movementSpeed = 1f;
 
     private void FixedUpdate()
@@ -21,7 +22,7 @@ public class EnemyMovement : MonoBehaviour
         //To store the position before the movement
         Vector2 pos = transform.position;
         //To move the ship down
-        pos.y -= movementSpeed * Time.fixedDeltaTime;
+        pos.y -= movementSpeed = enemyData.shipSpeed;
         //To actually move the ship
         transform.position = pos;
     }
