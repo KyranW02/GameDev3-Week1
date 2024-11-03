@@ -8,6 +8,12 @@ public class EnemyMovement : MonoBehaviour
     public EnemyData enemyData;
     private float movementSpeed = 1f;
 
+
+    private void Start()
+    {
+        movementSpeed = enemyData.shipSpeed;
+    }
+
     private void FixedUpdate()
     {
         //Does not execute the rest of the code if this check is true
