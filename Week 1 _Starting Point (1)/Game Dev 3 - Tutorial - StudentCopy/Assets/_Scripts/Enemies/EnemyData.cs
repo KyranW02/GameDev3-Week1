@@ -8,5 +8,5 @@ public class EnemyData : ScriptableObject
 {
     public Sprite shipSprite;
     public float shipSpeed;
-    public int shipHP;
+    public int shipHp;
 }
