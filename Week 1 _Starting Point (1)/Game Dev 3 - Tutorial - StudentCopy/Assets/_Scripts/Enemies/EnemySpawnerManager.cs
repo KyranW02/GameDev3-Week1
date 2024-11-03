@@ -23,10 +23,15 @@ public class EnemySpawnerManager : MonoBehaviour
         for (int i = 0; i < numberOfEnemiesSpawned; i++)
         {
             int randomInterger = Random.Range(0, spawnPoints.Length - 1);
+
             GameObject spawnedShip = Instantiate(enemyPrefab, spawnPoints[randomInterger]);
+
             spawnedShip.GetComponent<EnemyVisuals>().enemyData = enemyData[currentWaveCount];
+
             spawnedShip.GetComponent<EnemyMovement>().enemyData = enemyData[currentWaveCount];
+
             spawnedShip.GetComponent<EnemyLife>().enemyData = enemyData[currentWaveCount];
+
             yield return new WaitForSeconds(delayBetweenSpawns);
 
         }
