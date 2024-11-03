@@ -5765,8 +5765,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6935348067947489795, guid: 6069367a6aa9eeb498f1282d51cc65c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1196215877}
   m_SourcePrefab: {fileID: 100100000, guid: 6069367a6aa9eeb498f1282d51cc65c0, type: 3}
+--- !u!1 &1196215876 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6935348067947489795, guid: 6069367a6aa9eeb498f1282d51cc65c0, type: 3}
+  m_PrefabInstance: {fileID: 1196215875}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1196215877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196215876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2827610674688fc4aa09698eb72e8c09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: f8a539e92b5c6e548ab86a9aec095032, type: 2}
 --- !u!1 &1217189390
 GameObject:
   m_ObjectHideFlags: 0
@@ -5811,6 +5832,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1237103230}
+  - component: {fileID: 1237103231}
   m_Layer: 0
   m_Name: EnemySpawnManager
   m_TagString: Untagged
@@ -5833,6 +5855,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1551061802}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1237103231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237103229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a237abb8c3d604242b82696816e19e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoints: []
+  delayBetweenSpawns: 0
+  numberOfEnemiesSpawned: 0
+  delayBetweenWaves: 0
+  enemyPrefab: {fileID: 0}
+  enemyData: []
+  wavesNumber: 0
 --- !u!1 &1254813858
 GameObject:
   m_ObjectHideFlags: 0
